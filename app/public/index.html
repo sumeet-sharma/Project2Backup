@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous"></link>
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>BootcampBooster</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron" style=color:white>
+            <h1 class="text-center" style=color:red>BootcampBooster</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card card-default">
+                    <div class="card-heading">
+                        <h4 class="card-title" style=color:red;text-align:center>Enter & Modify Information</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <!-- Form to input database information -->
+
+                        <form role="form">
+
+                            <div class="form-group row">
+                                <label for="week">Week Number</label>
+                                <input class="form-control" id="week" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="activity">Activity Number</label>
+                                <input class="form-control" id="activity" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="link">GitLab Link</label>
+                                <input class="form-control" id="link" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="skill">Skill Reference</label>
+                                <input class="form-control" id="skill" type="text">
+                            </div>
+                            <button class="btn btn-primary" id="add-information" type="submit">Submit</button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Information Display -->
+            <div class="col-lg-9">
+                <div class="card card-default">
+                    <div class="card-heading">
+                        <h4 class="card-title" style=color:red;text-align:center>Display Information</h4>
+                    </div>
+                    <div class="card-body" id="database-info-title">
+                        <div class="card-body">
+                            <table class="table table-hover" id="database-info">
+                                <thead>
+                                    <tr>
+                                        <th>Week Number</th>
+                                        <th>Activity Number</th>
+                                        <th>GitLab Link</th>
+                                        <th>Skill Reference</th>
+                                        <th>Options</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div id="test-area">
+
+    </div>
+    <script src="js/chirp.js"></script>
+</body>
+
+</html>
