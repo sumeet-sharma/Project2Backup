@@ -30,7 +30,7 @@ module.exports = function (app) {
 
     console.log("Skill Data:");
     console.log(req.body);
-
+   
     Skill.create({
       week: req.body.week,
       activity: req.body.activity,

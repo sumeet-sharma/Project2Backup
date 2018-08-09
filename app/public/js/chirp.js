@@ -20,7 +20,7 @@ $("#add-information").on("click", function (event) {
         .then(function () {
 
             $("#database-info").prepend("<tr><td>" + newSkill.week + "</td><td>" + newSkill.activity + "</td><td>" +
-                newSkill.link + "</td><td>" + newSkill.skill + "</td></tr><button type='button' class='btn btn-primary-sm'>EDIT</button></td><td><button type='button' class='btn btn - primary-sm'>DEL</button></td>");
+                newSkill.link + "</td><td>" + newSkill.skill + "</td></tr>");
 
         });
 
@@ -39,7 +39,7 @@ $.get("/api/all", function (data) {
         for (var i = 0; i < data.length; i++) {
 
             $("#database-info").prepend("<tr><td>" + data[i].week + "</td><td>" + data[i].activity + "</td><td>" +
-                data[i].link + "</td><td>" + data[i].skill + "</td><td><button type='button' class='btn btn-primary-sm'>EDIT</button></td><td><button type='button' class='btn btn - primary-sm'>DEL</button></td>");            
+                data[i].link + "</td><td>" + data[i].skill + "</td></tr>");            
 
         }
 
