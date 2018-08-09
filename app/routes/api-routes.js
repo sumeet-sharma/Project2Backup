@@ -44,4 +44,18 @@ module.exports = function (app) {
 
   });
 
+  // PUT route for updating posts
+  app.put("/api/posts", function (req, res) {
+    Skill.update(req.body,
+      {
+        where: {
+          id: req.body.week
+        }
+      })
+      .then(function (dbPost) {
+        res.json(dbPost);
+      });
+  });
+
+
 };

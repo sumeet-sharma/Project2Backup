@@ -19,37 +19,45 @@
         <div class="jumbotron" style=color:white>
             <h1 class="text-center" style=color:red>BootcampBooster</h1>
         </div>
-        <div class="col-lg-9">
-            <div class="card card-default">
-                <div class="card-heading">
-                    <h4 class="card-title" style=color:red;text-align:center>Display Information</h4>
-                </div>
-                <div class="card-body" id="database-info-title">
-                    <div class="card-body">
-                        <table class="table table-hover" id="database-info">
-                            <thead>
-                                <tr>
-                                    <th>Week Number</th>
-                                    <th>Activity Number</th>
-                                    <th>GitLab Link</th>
-                                    <th>Skill Reference</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
 
-                        </table>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card card-default" style="position: relative; left: 300px; width: 500px;">
+                    <div class="card-heading">
+                        <h4 class="card-title" style="color:red;text-align:center;">Update Information</h4>
                     </div>
+                    <div class="card-body">
+
+                        <!-- Form to input database information -->
+
+                        <form role="form">
+
+                            <div class="form-group row">
+                                <label for="week">Week Number</label>
+                                <input class="form-control" id="updated-week" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="activity">Activity Number</label>
+                                <input class="form-control" id="updated-activity" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="link">GitLab Link</label>
+                                <input class="form-control" id="updated-link" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="skill">Skill Reference</label>
+                                <input class="form-control" id="updated-skill" type="text">
+                            </div>
+                            <button class="btn btn-primary" id="update-information" type="submit">Update</button>
+                        </form>
+
+                    </div>
+
                 </div>
+
             </div>
-        </div>
 
-
-    </div>
-
-    </div>
-
-    <script src="js/chirp.js"></script>
+            <script src="js/table.js"></script>
 </body>
 
 </html>
